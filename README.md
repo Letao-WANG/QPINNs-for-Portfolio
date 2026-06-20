@@ -8,13 +8,18 @@ Hamilton-Jacobi-Bellman (HJB) PDE from the Merton portfolio optimization
 problem. The files in this repository correspond to the numerical validation
 and experiments reported in the paper.
 
-## Files
+## Notebooks
 
-| File or folder | Corresponding part of the paper |
+| Notebook | Corresponding part of the paper |
 | --- | --- |
 | `verify_theorem3_td_qnn.ipynb` | Verification of Theorem 3. This notebook trains the constructive tensor-decomposed quantum model on the explicit target polynomial used in the theorem validation. |
 | `run_QPINN_MPS_low_rank.ipynb` | Fixed-volatility Merton HJB experiment. This corresponds to the two-dimensional input case `(t,x)` and compares QPINN, Quantum-inspired PINN, Counterpart PINN, and FC PINN. |
 | `run_QPINN_MPS_high_rank.ipynb` | Volatility-input Merton HJB experiment. This corresponds to the three-dimensional input case `(t,x,sigma)`, where volatility is treated as an additional input variable. |
+
+## Saved Data
+
+| Folder | Contents |
+| --- | --- |
 | `results/` | Saved outputs for the fixed-volatility experiment, including losses, trained model weights, seeds, and run configurations. |
 | `results_parametric_volatility/` | Saved outputs for the volatility-input experiment, including losses, trained model weights, seeds, and run configurations. |
 
