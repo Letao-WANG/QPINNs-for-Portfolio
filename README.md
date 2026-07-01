@@ -15,7 +15,6 @@ and experiments reported in the paper.
 | `verify_theorem3_td_qnn.ipynb` | Verification of Theorem 3. This notebook trains the constructive tensor-decomposed quantum model on the explicit target polynomial used in the theorem validation. |
 | `run_QPINN_MPS_low_rank.ipynb` | Fixed-volatility Merton HJB experiment (D=2,R=1). This corresponds to the two-dimensional input case `(t,x)` and compares QPINN, Quantum-inspired PINN, Counterpart PINN, and FC PINN. |
 | `run_QPINN_MPS_high_rank.ipynb` | Volatility-input Merton HJB experiment (D=3,R=2). This corresponds to the three-dimensional input case `(t,x,sigma)`, where volatility is treated as an additional input variable. |
-| `check_reproducibility_environment.ipynb` | Environment check notebook. This prints package versions, optimizer availability, and the PyTorch device/dtype path used for exact saved-loss reproducibility. |
 
 ## Saved Data
 
